@@ -8,6 +8,9 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
 
+export EDITOR=nvim # Using nvim as terminal editor
+export VISUAL=code # Using vscode as visual code editor
+
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/bin/scripts:$PATH
 
@@ -26,7 +29,7 @@ plugins=(
   )
 
 source $ZSH/oh-my-zsh.sh
-
+source $HOME/.zsh/aliases
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
