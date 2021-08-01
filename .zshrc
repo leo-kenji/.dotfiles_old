@@ -19,7 +19,9 @@ export PATH=$HOME/.local/bin/scripts:$PATH
 export ZSH="${HOME}/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-
+# Plugins that need to be installed/cloned manually
+# https://github.com/zsh-users/zsh-autosuggestions
+# https://github.com/zsh-users/zsh-syntax-highlighting
 plugins=(
   git
   autojump
