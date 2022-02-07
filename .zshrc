@@ -29,6 +29,7 @@ plugins=(
   vscode
   zsh-autosuggestions
   zsh-syntax-highlighting
+  poetry
   )
 
 source $ZSH/oh-my-zsh.sh
