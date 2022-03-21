@@ -12,7 +12,7 @@ fi
 export PAGER="less -R"
 
 export EDITOR=nvim # Using nvim as terminal editor
-export VISUAL=code # Using vscode as visual code editor
+export VISUAL="code -w" # Using vscode as visual code editor
 
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/bin/scripts:$PATH
