@@ -41,3 +41,4 @@ eval "$(zoxide init zsh)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 SPLIT="v"
+eval "$(pyenv init -)"
