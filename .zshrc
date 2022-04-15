@@ -30,6 +30,9 @@ plugins=(
   poetry
   )
 
+# Stop oh-my-zsh from updating
+DISABLE_AUTO_UPDATE=true
+
 ##Start zoxide
 eval "$(zoxide init zsh)"
 
