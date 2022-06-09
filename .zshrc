@@ -6,6 +6,7 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
 
+#Oh-my-zsh config
 DOTFILES_DIR="/home/kenji/.dotfiles/"
 
 # Allow colors to be rendered
@@ -29,7 +30,6 @@ plugins=(
   vscode
   zsh-autosuggestions
   zsh-syntax-highlighting
-  poetry
   )
 
 # Stop oh-my-zsh from updating
@@ -46,4 +46,4 @@ eval "$(zoxide init zsh)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 SPLIT="v"
-eval "$(pyenv init -)"
+
