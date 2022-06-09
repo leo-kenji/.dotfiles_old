@@ -6,10 +6,10 @@ This setup is based on this [blog post](https://stegosaurusdormant.com/bare-git-
 
 ```zsh
 git init --bare $HOME/.dotfiles
-alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles="GIT_DIR=$DOTFILES_DIR GIT_WORK_TREE=~"
 mkdir -p $HOME/.zsh
-echo "alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zsh/aliases
-dotfiles remote add origin git@github.com:leo-kenji/.dotfiles.git
+echo "alias dotfiles=\"GIT_DIR=$DOTFILES_DIR GIT_WORK_TREE=~\"" >> $HOME/.zsh/aliases
+dotfiles git remote add origin git@github.com:leo-kenji/.dotfiles.git
 ```
 
 ## Replication
@@ -23,15 +23,15 @@ rm --recursive dotfiles-tmp
 ## Configuration
 
 ```zsh
-dotfiles config status.showUntrackedFiles no
-dotfiles remote set-url origin git@github.com:leo-kenji/.dotfiles.git
+dotfiles git config status.showUntrackedFiles no
+dotfiles git remote set-url origin git@github.com:leo-kenji/.dotfiles.git
 ```
 
 ## Usage
 
 ```zsh
-dotfiles status
-dotfiles add .gitconfig
-dotfiles commit -m 'Add gitconfig'
-dotfiles push
+dotfiles git status
+dotfiles git add .gitconfig
+dotfiles git commit -m 'Add gitconfig'
+dotfiles git push
 ```

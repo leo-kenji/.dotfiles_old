@@ -6,6 +6,8 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
 
+DOTFILES_DIR="/home/kenji/.dotfiles/"
+
 # Allow colors to be rendered
 export PAGER="less -R"
 
