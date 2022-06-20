@@ -39,7 +39,7 @@ DISABLE_AUTO_UPDATE=true
 eval "$(zoxide init zsh)"
 
 [[ -f "$ZSH/oh-my-zsh.sh" ]] && source "$ZSH/oh-my-zsh.sh"
-[[ -f "$HOME/.zsh/aliases" ]] && source "$HOME/.zsh/aliases"
+[[ -f "$HOME/.zsh/aliases.zsh" ]] && source "$HOME/.zsh/aliases.zsh"
 [[ -f "$HOME/.zsh/nnn" ]] && source "$HOME/.zsh/nnn"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
