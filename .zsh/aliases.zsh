@@ -1,5 +1,7 @@
-alias dotfiles="GIT_DIR=$DOTFILES_DIR GIT_WORK_TREE=~"
 alias o='xdg-open'
+# Dotfiles
+alias dotfiles="GIT_DIR=$DOTFILES_DIR GIT_WORK_TREE=~"
+# systemctl
 alias sstart="sudo systemctl start"
 alias sstop="sudo systemctl stop"
 alias srestart="sudo systemctl restart"
