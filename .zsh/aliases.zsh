@@ -1,3 +1,4 @@
+alias l="exa -lah"
 alias o='xdg-open'
 # Dotfiles
 alias dotfiles="GIT_DIR=$DOTFILES_DIR GIT_WORK_TREE=~"
